@@ -14,8 +14,5 @@ meses = [
 ]
 
 texto = input('Digite a data do seu nascimento (dd/mm/aaaa): ')
-partes = texto.split('/')
-
-mes = meses[int(partes[1]) - 1]
-
-print('Você nasceu no dia {:s} de {:s} de {:s}'.format(partes[0], mes, partes[2]))
+dia, mes, ano = texto.split('/')
+print('Você nasceu no dia {:s} de {:s} de {:s}'.format(dia, meses[int(mes) - 1], ano))
