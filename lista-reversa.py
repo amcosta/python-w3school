@@ -5,7 +5,4 @@ while i <= 5:
     l.append(n)
     i += 1
 
-nl = []
-
-
-print(l.reverse(l))
+print(l[::-1])
